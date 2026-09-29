@@ -29,7 +29,16 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    background-color: white;
+    color: #111;
+}
+
 
 main {
     max-width: 800px;
@@ -44,10 +53,12 @@ article {
     border-radius: 12px;
 }
 
-article img {
+main > img {
     max-width: 100%;
     height: auto;
-    align: center;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 12px;
 }
 
 footer {
