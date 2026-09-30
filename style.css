@@ -82,8 +82,12 @@ footer {
     header {
         padding: 30px 15px;
     }
+    
     .content-grid {
     grid-template-columns: 1fr;
+}
+    .post-card img {
+    height: 180px;
 }
 
     header h1 {
