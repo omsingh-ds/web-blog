@@ -213,8 +213,8 @@ footer {
     }
 
     .content-grid {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+}
 
     .post-card img {
         height: 180px;
