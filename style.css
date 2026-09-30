@@ -221,6 +221,7 @@ footer {
 }
 
 /* DESKTOP GRID FIX */
+
 .content-grid {
     display: grid !important;
     grid-template-columns: 2fr 1fr !important;
