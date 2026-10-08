@@ -220,3 +220,8 @@ footer {
         height: 180px;
     }
 }
+
+.highlight {
+    color: red;
+    font-size: 50px;
+}
