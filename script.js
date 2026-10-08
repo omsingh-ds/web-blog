@@ -1,3 +1,3 @@
-let name = "Om";
+let heading = document.querySelector("h1");
 
-console.log(name);
+heading.textContent = "My Awesome Web Blog";
