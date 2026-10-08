@@ -1,1 +1,3 @@
-console.log("JavaScript is working!");
+let name = "Om";
+
+console.log(name);
