@@ -11,3 +11,10 @@ button.addEventListener("click", function() {
         console.log("Highlight OFF");
     }
 });
+
+
+let darkModeButton = document.querySelector("#darkModeButton");
+
+darkModeButton.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
