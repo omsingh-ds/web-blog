@@ -50,3 +50,46 @@ greetButton.addEventListener("click", function() {
        greeting.textContent = "Welcome to my blog, " + name + "!";
     }
 });
+
+let posts = [
+    {
+        title: "Learning JavaScript",
+        category: "JavaScript",
+        description: "My first steps into dynamic websites."
+    },
+    {
+        title: "Understanding Arrays",
+        category: "JavaScript",
+        description: "How to store and work with multiple values."
+    },
+    {
+        title: "My Web Development Journey",
+        category: "Journey",
+        description: "What I have learned while building this blog."
+    }
+];
+let dynamicPosts = document.querySelector("#dynamicPosts");
+
+posts.forEach(function(post) {
+    let card = document.createElement("article");
+    card.classList.add("post-card");
+
+    let content = document.createElement("div");
+    content.classList.add("post-content");
+
+    let heading = document.createElement("h2");
+    heading.textContent = post.title;
+
+    let category = document.createElement("p");
+    category.textContent = post.category;
+
+    let description = document.createElement("p");
+    description.textContent = post.description;
+
+    content.appendChild(heading);
+    content.appendChild(category);
+    content.appendChild(description);
+
+    card.appendChild(content);
+    dynamicPosts.appendChild(card);
+});
