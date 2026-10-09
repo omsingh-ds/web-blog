@@ -24,7 +24,13 @@ let nameInput = document.querySelector("#nameInput");
 let greetButton = document.querySelector("#greetButton");
 let greeting = document.querySelector("#greeting");
 
+
 greetButton.addEventListener("click", function() {
-    let name = nameInput.value;
-    greeting.textContent = "Hello, " + name + "! Welcome to my blog.";
+    let name = nameInput.value.trim();
+
+    if (name === "") {
+        greeting.textContent = "Please enter your name!";
+    } else {
+        greeting.textContent = "Hello, " + name + "! Welcome to my blog.";
+    }
 });
