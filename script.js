@@ -42,6 +42,10 @@ greetButton.addEventListener("click", function() {
 
     if (name === "") {
         greeting.textContent = "Please enter your name!";
+    } else if(name.tolowercase== "om") {
+        greeting.textContent = "Welcome back, Om! 👑";
+    } else if(name.tolowercase== "himanshi") {
+        greeting.textcontent = "Arre Maalkin👑 aap, Welcome Welcome!";
     } else {
         greeting.textContent = "Hello, " + name + "! Welcome to my blog.";
     }
