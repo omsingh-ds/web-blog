@@ -47,6 +47,6 @@ greetButton.addEventListener("click", function() {
     } else if(name.tolowercase== "himanshi") {
         greeting.textcontent = "Arre Maalkin👑 aap, Welcome Welcome!";
     } else {
-        greeting.textContent = "Hello, " + name + "! Welcome to my blog.";
+       greeting.textContent = "Welcome to my blog, " + name + "!";
     }
 });
